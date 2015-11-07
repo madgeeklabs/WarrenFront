@@ -16,7 +16,7 @@ var Button = React.createClass({
 
         return (
             <a className={className} href="#" role="button">
-                <img className="btn-icon" src="/src/images/icon_repeat.png" />
+                <img className="btn-icon" src="/assets/images/icon_repeat.png" />
                 <span className="btn-label">{this.props.children}</span>
             </a>
         );

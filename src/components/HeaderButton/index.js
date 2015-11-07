@@ -32,11 +32,11 @@ const HeaderButton = React.createClass({
         let classNames = 'btn btn-header';
 
         if (this.props.type === 'default') {
-            imageSrc = '/src/images/icon_menu.png';
+            imageSrc = '/assets/images/icon_menu.png';
             imageAlt = 'Botón de menú';
             classNames += ' btn-menu';
         } else { // 'back'
-            imageSrc = '/src/images/icon_arrow_back.png';
+            imageSrc = '/assets/images/icon_arrow_back.png';
             imageAlt = 'Botón de volver atrás';
             classNames += ' btn-back';
         }

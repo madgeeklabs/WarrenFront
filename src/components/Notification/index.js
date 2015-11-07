@@ -8,7 +8,7 @@ var Notification = React.createClass({
     render: function() {
         return (
             <div className="alert">
-                <img className="alert-icon" src="/src/images/icon_alert.png"/>
+                <img className="alert-icon" src="/assets/images/icon_alert.png"/>
                 <Text type="smallEmphasizedLight" className="alert-text">Pedido mínimo: 20 €</Text>
             </div>
         );

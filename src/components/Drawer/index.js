@@ -45,23 +45,23 @@ var Drawer = React.createClass({
                 <div className={'drawer-overlay'} onClick={this.handleOverlayClick}></div>
                 <aside className={'drawer-content'}>
                     <div className="drawer-profile">
-                        <img className="drawer-profile-image" src="/src/images/icon_profile_small.png" />
+                        <img className="drawer-profile-image" src="/assets/images/icon_profile_small.png" />
                         <div className="drawer-profile-content">
                             <Text className="drawer-profile-title" type="bodyEmphasized">Iniciar sesión</Text>
                             <Text className="drawer-profile-subtitle" type="small">Ver perfil</Text>
                         </div>
-                        <img className="drawer-profile-settings" src="/src/images/icon_settings.png" />
+                        <img className="drawer-profile-settings" src="/assets/images/icon_settings.png" />
                     </div>
                     <ul className="drawer-list drawer-main">
                         <li>
                             <a className="drawer-list-item" href="">
-                                <img className="drawer-item-icon" src="/src/images/icon_home.png" />
+                                <img className="drawer-item-icon" src="/assets/images/icon_home.png" />
                                 <span className="drawer-item-label">Home</span>
                             </a>
                         </li>
                         <li>
                             <a className="drawer-list-item" href="">
-                                <img className="drawer-item-icon" src="/src/images/icon_receipt.png" />
+                                <img className="drawer-item-icon" src="/assets/images/icon_receipt.png" />
                                 <span className="drawer-item-label">My Products</span>
                             </a>
                         </li>
@@ -70,19 +70,19 @@ var Drawer = React.createClass({
                     <ul className="drawer-list drawer-cart">
                         <li>
                             <a className="drawer-list-item" href="">
-                                <img className="drawer-item-icon" src="/src/images/icon_featured.png" />
+                                <img className="drawer-item-icon" src="/assets/images/icon_featured.png" />
                                 <span className="drawer-item-label">Stocks</span>
                             </a>
                         </li>
                         <li>
                             <a className="drawer-list-item" href="">
-                                <img className="drawer-item-icon" src="/src/images/icon_products.png" />
+                                <img className="drawer-item-icon" src="/assets/images/icon_products.png" />
                                 <span className="drawer-item-label">Mutual Funds</span>
                             </a>
                         </li>
                         <li>
                             <a className="drawer-list-item" href="">
-                                <img className="drawer-item-icon" src="/src/images/icon_search.png" />
+                                <img className="drawer-item-icon" src="/assets/images/icon_search.png" />
                                 <span className="drawer-item-label">Bank Deposits</span>
                             </a>
                         </li>

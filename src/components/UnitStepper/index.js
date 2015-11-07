@@ -12,11 +12,11 @@ var UnitStepper = React.createClass({
         return (
             <div className="unit-stepper">
                 <button className="unit-stepper-btn">
-                    <img className="unit-stepper-icon" src="/src/images/icon_decrease.png"/>
+                    <img className="unit-stepper-icon" src="/assets/images/icon_decrease.png"/>
                 </button>
                 <Text className="unit-stepper-amount" type="h3">{`${this.props.amount}`}</Text>
                 <button className="unit-stepper-btn">
-                    <img className="unit-stepper-icon" src="/src/images/icon_increase.png"/>
+                    <img className="unit-stepper-icon" src="/assets/images/icon_increase.png"/>
                 </button>
             </div>
         );

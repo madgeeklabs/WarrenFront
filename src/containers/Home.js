@@ -11,7 +11,7 @@ const LineChart = require('react-chartjs').Line;
 const Home = React.createClass({
     getInitialState() {
         return {
-            savings: 1,
+            savings: 4.25,
             lineChart: {
                 data: {
                     labels: [
@@ -60,7 +60,7 @@ const Home = React.createClass({
                 }}/>
                 <Drawer ref='drawer' hideable/>
                 <Container type="content">
-                    <Text type='h2'>{this.state.savings}</Text>
+                    <Text type='h2'>{this.state.savings.toFixed(2)}</Text>
                     <Text type='h3Red'>{'+ 2,50 (5,90€)'}</Text>
                     <LineChart
                         data={this.state.lineChart.data}
