@@ -20,15 +20,6 @@ const Invest = React.createClass({
                 <Container type="content">
                 <table  >
   
-var upOrDown;
-if (upOrDown) {
-  loginButton = <LogoutButton />;
-} else {
-  loginButton = <LoginButton />;
-}
-
-
-);
   <tr>
     <td><img src="../images/twitter.jpg" alt="Twitter"/></td>
    
