@@ -16,8 +16,11 @@ $.ajax({
   type: "POST",
   url: 'http://warren.ngrok.io/company',
   data: {company:"fb"},
-  success: function(response) {console.log("facebook selected", response)},
-  error: function(e) {console.log("error in facebook selected", e)},
+  success: function(response) {
+	console.log("facebook selected", response)
+	$(location).attr('href','#/Home');
+},
+  error: function(e) {alert("error in facebook selected")},
   dataType: "json" 
 });
 	},
@@ -27,8 +30,11 @@ $.ajax({
   type: "POST",
   url: 'http://warren.ngrok.io/company',
   data: {company:"go"},
-  success: function(response) {console.log("Google selected", response)},
-  error: function() {console.log("error in google selected")},
+  success: function(response) {
+	console.log("Google selected", response)
+	$(location).attr('href','#/Home');
+},
+  error: function() {alert("error in google selected")},
   dataType: "json" 
 });
 	},
