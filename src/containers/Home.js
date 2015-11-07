@@ -7,7 +7,6 @@ const Drawer = require('../components/Drawer');
 const Section = require('../components/Section');
 const Text = require('../components/Text');
 const LineChart = require('react-chartjs').Line;
-const $ = require('jquery');
 
 var lineChartOptions = {
     data: {
@@ -86,7 +85,7 @@ const Home = React.createClass({
     },
 
     componentDidMount() {
-        this._fetchFromServer()
+        this._fetchFromServer();
         setInterval(this._fetchFromServer, 10000);
     },
 

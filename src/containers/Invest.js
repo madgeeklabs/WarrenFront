@@ -19,15 +19,6 @@ const Invest = React.createClass({
                 <Drawer ref='drawer' hideable/>
                 <Container type="content">
                 <table  >
-
-var upOrDown;
-if (upOrDown) {
-  loginButton = <LogoutButton />;
-} else {
-  loginButton = <LoginButton />;
-}
-
-
 );
   <tr>
     <td><img src="../assets/images/twitter.jpg" alt="Twitter"/></td>
