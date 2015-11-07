@@ -7,7 +7,10 @@ const PropTypes = React.PropTypes;
 
 const App = React.createClass({
     propTypes: {
-        children: PropTypes.arrayOf([PropTypes.element.isRequired])
+        children: React.PropTypes.oneOfType([
+            React.PropTypes.arrayOf(PropTypes.element.isRequired),
+            React.PropTypes.element
+        ]).isRequired
     },
     render() {
         return (
