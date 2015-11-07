@@ -1,0 +1,18 @@
+@import '../../stylesheets/base';
+
+.unit-stepper {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.unit-stepper-btn {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.unit-stepper-amount {
+    margin: 0 16px;
+}

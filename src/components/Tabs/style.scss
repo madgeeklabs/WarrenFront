@@ -1,0 +1,75 @@
+@import '../../stylesheets/base';
+
+$tab-label-disabled-opacity: .2;
+$tab-label-h-padding: 1.2 * $unit;
+$tab-label-height: 4.8 * $unit;
+$tab-text-height: 14px;
+$tab-pointer-height: 3px;
+$tab-label-v-padding: 16px;
+$tab-navigation-border-color: $color-divider;
+$tab-pointer-color: $color-error !default;
+$tab-text-font-weight: 400 !default;
+$tab-text-color: $color-light !default;
+$tab-text-inactive-color: unquote("rgba(#{$tab-text-color}, 0.70)") !default;
+
+.tab-root {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-navigation {
+    display: flex;
+    flex-direction: row;
+    background-color: $color-primary;
+    box-shadow: 0 0 4px rgba(0,0,0,.12),
+                0 4px 4px rgba(0,0,0,.24);
+}
+
+.tab-label {
+    width: 33.333333%;
+    text-align: center;
+    padding: $tab-label-v-padding $tab-label-h-padding;
+    font-size: $tab-text-height;
+    font-weight: $tab-text-font-weight;
+    line-height: 1;
+    color: $tab-text-color;
+    text-transform: uppercase;
+    transition-timing-function: $animation-curve-default;
+    transition-duration: $animation-duration;
+    transition-property: box-shadow, color;
+    &.active {
+        color: $tab-text-color;
+    }
+    &.disabled {
+        opacity: $tab-label-disabled-opacity;
+    }
+    &:not(.disabled) {
+        cursor: pointer;
+    }
+    &.hidden {
+        display: none;
+    }
+}
+
+.pointer {
+    position: absolute;
+    width: 0;
+    height: $tab-pointer-height;
+    margin-top: - $tab-pointer-height;
+    background-color: $tab-pointer-color;
+    transition-timing-function: $animation-curve-default;
+    transition-duration: $animation-duration;
+    transition-property: left, width;
+}
+
+.tab-content {
+    display: flex;
+    display: none;
+    flex-direction: column;
+    padding: $tab-label-v-padding $tab-label-h-padding;
+
+    &.active {
+        display: block;
+    }
+}

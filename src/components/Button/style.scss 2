@@ -1,0 +1,23 @@
+@import '../../stylesheets/base';
+
+.btn-card-side {
+    float: right;
+    padding: 28px 16px;
+    border-left: 1px solid $color-neutral-darker;
+    text-decoration: none;
+}
+
+.btn-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.btn-label {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $color-dark-darker;
+    font-weight: 500;
+}

@@ -1,0 +1,147 @@
+@import '../../stylesheets/base';
+
+$drawer-background-color: unquote('rgb(#{$palette-grey-50})') !default;
+$drawer-border-color: unquote('rgb(#{$palette-grey-300})') !default;
+$drawer-overlay-color: $color-overlay;
+$drawer-text-color: unquote('rgb(#{$palette-grey-800})') !default;
+$drawer-width: 24 * $unit;
+$drawer-content-scrollable: false;
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: $z-index-high;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.drawer-active {
+  pointer-events: all;
+  > .drawer-content {
+    transition-delay: $animation-delay;
+    transform: translateX(0);
+  }
+  > .drawer-overlay {
+    opacity: $color-overlay-opacity;
+  }
+}
+
+.drawer-left {
+  > .drawer-content {
+    left: 0;
+    border-right: 1px solid $drawer-border-color;
+  }
+  &:not(.drawer-active) > .drawer-content {
+    transform: translateX(- 100%);
+  }
+}
+
+.drawer-right {
+  > .drawer-content {
+    right: 0;
+    border-left: 1px solid $drawer-border-color;
+  }
+  &:not(.drawer-active) > .drawer-content {
+    transform: translateX(100%);
+  }
+}
+
+.drawer-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: $drawer-overlay-color;
+  opacity: 0;
+  transition-timing-function: $animation-curve-default;
+  transition-duration: $animation-duration;
+  transition-property: opacity;
+}
+
+.drawer-content {
+  @include shadow-2dp();
+  position: absolute;
+  top: 0;
+  display: block;
+  width: $drawer-width;
+  height: 100%;
+  overflow-y: if($drawer-content-scrollable, scroll, null);
+  color: $drawer-text-color;
+  background-color: $drawer-background-color;
+  transition-delay: 0s;
+  transition-timing-function: $animation-curve-default;
+  transition-duration: $animation-duration;
+  transition-property: transform;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+
+.drawer-profile {
+  height: 86px;
+  padding: 16px;
+  background: $color-neutral;
+  @include clearfix;
+}
+
+.drawer-profile-image {
+  float: left;
+  margin-top: 10px;
+}
+
+.drawer-profile-content {
+  float: left;
+  margin-left: 24px;
+}
+
+.drawer-profile-title {
+  display: block;
+}
+.drawer-profile-subtitle {
+  display: block;
+}
+
+.drawer-profile-settings {
+  float: right;
+  margin-top: 14px;
+}
+.drawer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.drawer-list-item {
+  display: block;
+  color: $color-dark;
+  height: 49px;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.drawer-item-icon {
+  float: left;
+}
+
+.drawer-item-label {
+  display: inline-block;
+  margin-left: 28px;
+  margin-top: 5px;
+
+}
+.alert-counter {
+  display: block;
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin: 4px;
+  line-height: 19px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: $color-error;
+}
+
+.drawer-list-title {
+  padding-bottom: 8px;
+  border-bottom: 1px solid $color-neutral-darker;
+}

@@ -1,0 +1,50 @@
+@import '../../stylesheets/base';
+
+.segmented {
+    padding: 0;
+    margin: 12px 26px 0;
+    display: flex;
+    list-style: none;
+}
+
+.segmented-item {
+    flex-grow: 1;
+    text-align: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $color-neutral;
+    color: $color-neutral;
+    display: flex;
+    width: 50%;
+}
+
+.segmented-item-input {
+    display: none;
+}
+
+.segmented-item:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-right-width: 0;
+    border-right-color: $color-error;
+}
+
+.segmented-item:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-left-width: 0;
+    border-left-color: $color-error;
+}
+
+.segmented-selected {
+    color: $color-error;
+    border-color: $color-error;
+    border-width: 2px !important;
+}
+
+.segmented-item-label {
+    flex-grow: 1;
+    padding: 16px;
+}
+
+

@@ -1,0 +1,26 @@
+@import '../../stylesheets/base';
+
+.section {
+    margin: 16px 8px;
+}
+
+.section-title {
+    color: $color-dark-lighter;
+    margin-left: 16px;
+    margin-bottom: 8px;
+}
+
+.section-item-info {
+    margin: 8px 16px 16px;
+    padding: 0;
+    float: left;
+}
+
+.center-block {
+    width: auto;
+    margin: 8px auto 8px;
+    text-align: center;
+    text-decoration: none;
+    color: $color-dark-darker;
+    font-weight: 500;
+}

@@ -1,0 +1,58 @@
+@import '../../stylesheets/base';
+
+//
+// Types
+//
+
+.span { display: block; }
+.span,
+.p { font-size: 16px; }
+.h1 { font-size: 28px; }
+.h2 { font-size: 24px; }
+.h3 { font-size: 20px; }
+.small {
+    font-size: 14px;
+    display: block;
+}
+.notification {
+    font-size: 12px;
+}
+
+//
+// Line Heights
+//
+
+.lh-120 { line-height: 1.2; }
+.lh-150 { line-height: 1.5; }
+
+//
+// Weights
+//
+
+.txt-regular { font-weight: 400; }
+.txt-medium { font-weight: 500; }
+.txt-light { font-weight: 300; }
+
+// Margins
+
+.margin-small { margin: 6px 0; }
+.margin-medium { margin: 8px 0; }
+.margin-large { margin: 16px 0; }
+.margin-left-large { margin-left: 16px; }
+
+//
+// Colors
+//
+
+.color-dark { color: $color-dark; }
+.color-dark-lighter { color: $color-dark-lighter; }
+.color-light { color: $color-light; }
+.color-neutral { color: $color-neutral; }
+.color-neutral-darker { color: $color-dark-lighter; }
+.color-red { color: $color-error; }
+
+//
+// Shadows
+//
+
+.txt-shadow { text-shadow: 1px 2px 4px rgba(0,0,0,0.50); }
