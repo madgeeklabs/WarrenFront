@@ -19,7 +19,7 @@ const Invest = React.createClass({
                 <Drawer ref='drawer' hideable/>
                 <Container type="content">
                 <table  >
-  
+
 var upOrDown;
 if (upOrDown) {
   loginButton = <LogoutButton />;
@@ -30,20 +30,20 @@ if (upOrDown) {
 
 );
   <tr>
-    <td><img src="../images/twitter.jpg" alt="Twitter"/></td>
-   
-    <td><td><img src="../images/flecha_arriba.png" alt="OK"/></td></td>
+    <td><img src="../assets/images/twitter.jpg" alt="Twitter"/></td>
+
+    <td><td><img src="../assets/images/flecha_arriba.png" alt="OK"/></td></td>
   </tr>
   <tr>
-    <td><img src="../images/Google.jpg" alt="Google"/></td>
-    <td><td><img src="../images/flecha_abajo.jpg" alt="KO"/></td></td>
+    <td><img src="../assets/images/Google.jpg" alt="Google"/></td>
+    <td><td><img src="../assets/images/flecha_abajo.jpg" alt="KO"/></td></td>
   </tr>
 </table>
                 </Container>
             </Container>
         );
     }
-}); 
+});
 
 
 
