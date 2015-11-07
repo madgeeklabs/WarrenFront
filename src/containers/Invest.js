@@ -9,6 +9,34 @@ const Text = require('../components/Text');
 const LineChart = require('react-chartjs').Line;
 
 const Invest = React.createClass({
+
+	selectFacebook(e){
+		e.preventDefault();
+$.ajax({
+  type: "POST",
+  url: 'http://warren.ngrok.io/company',
+  data: {company:"fb"},
+  success: function(response) {console.log("facebook selected", response)},
+  error: function(e) {console.log("error in facebook selected", e)},
+  dataType: "json" 
+});
+	},
+	selectGoogle(e){
+		e.preventDefault();
+$.ajax({
+  type: "POST",
+  url: 'http://warren.ngrok.io/company',
+  data: {company:"go"},
+  success: function(response) {console.log("Google selected", response)},
+  error: function() {console.log("error in google selected")},
+  dataType: "json" 
+});
+	},
+	alertNotImplemented(e){
+		e.preventDefault();
+		alert("Not Implemented!");
+	},
+
     render() {
         var self = this;
         return (
@@ -18,18 +46,11 @@ const Invest = React.createClass({
                 }}/>
                 <Drawer ref='drawer' hideable/>
                 <Container type="content">
-                <table  >
-  
-  <tr>
-    <td><img src="../assets/images/twitter.jpg" alt="Twitter"/></td>
-
-    <td><td><img src="../assets/images/flecha_arriba.png" alt="OK"/></td></td>
-  </tr>
-  <tr>
-    <td><img src="../assets/images/Google.jpg" alt="Google"/></td>
-    <td><td><img src="../assets/images/flecha_abajo.jpg" alt="KO"/></td></td>
-  </tr>
-</table>
+<div className="invest" onClick={this.selectFacebook} id="facebook">Facebook<img class="invest_image" src="../assets/images/facebook.jpg"/></div>
+<div className="invest" onClick={this.selectGoogle} id="google">Google<img class="invest_image" src="../assets/images/Google.jpg" /></div>
+<div className="invest" onClick={this.alertNotImplemented} id="inditex">Inditex<img class="invest_image" src="../assets/images/inditex.png" /></div>
+<div className="invest" onClick={this.alertNotImplemented} id="repsol">Repsol<img class="invest_image" src="../assets/images/repsol.jpg" /></div>
+<div className="invest" onClick={this.alertNotImplemented} id="twitter">Twitter<img class="invest_image" src="../assets/images/twitter.jpg" /></div>
                 </Container>
             </Container>
         );
