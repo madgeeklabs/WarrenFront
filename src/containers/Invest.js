@@ -52,11 +52,11 @@ $.ajax({
                 }}/>
                 <Drawer ref='drawer' hideable/>
                 <Container type="content">
-<div className="invest" onClick={this.selectFacebook} id="facebook">Facebook<img class="invest_image" src="../assets/images/facebook.jpg"/></div>
-<div className="invest" onClick={this.selectGoogle} id="google">Google<img class="invest_image" src="../assets/images/Google.jpg" /></div>
+<div className="invest" onClick={this.selectFacebook} id="facebook">Facebook<img class="invest_image" src="../assets/images/facebook.png"/></div>
+<div className="invest" onClick={this.selectGoogle} id="google">Google<img class="invest_image" src="../assets/images/google.png" /></div>
 <div className="invest" onClick={this.alertNotImplemented} id="inditex">Inditex<img class="invest_image" src="../assets/images/inditex.png" /></div>
-<div className="invest" onClick={this.alertNotImplemented} id="repsol">Repsol<img class="invest_image" src="../assets/images/repsol.jpg" /></div>
-<div className="invest" onClick={this.alertNotImplemented} id="twitter">Twitter<img class="invest_image" src="../assets/images/twitter.jpg" /></div>
+<div className="invest" onClick={this.alertNotImplemented} id="repsol">Repsol<img class="invest_image" src="../assets/images/repsol.png" /></div>
+<div className="invest" onClick={this.alertNotImplemented} id="twitter">Twitter<img class="invest_image" src="../assets/images/twitter.png" /></div>
                 </Container>
             </Container>
         );
